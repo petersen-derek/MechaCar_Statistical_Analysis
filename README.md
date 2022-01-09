@@ -28,5 +28,25 @@ Overall, the variance is only 62.3 PSI thus meeting the goal of less than a vari
 However, when you breakout the stats by Manufacturing Lot, Lot 3 with variance of 170 PSI far exceeds the target of 70 PSI.  
 
 
+## T-Tests on Suspension Coils
+
+### Summary
+![image](https://user-images.githubusercontent.com/90879042/148698420-58f89823-111a-4da5-8c07-43569b8d8d16.png)
+
+Overall, the p-value is 0.06.  This is above the standard limit of 0.05 which indicates the null hypothesis should not be rejected.
+
+### By Lot
+![image](https://user-images.githubusercontent.com/90879042/148698802-bc02e3c1-216a-4748-86c5-07180f1b947b.png)
+
+When looking at the p-value by lot, the only lot with a p-value below 0.05 is lot 3 with a p-value of 0.04 indicating the null hypothesis should be rejected as the average is statistically different than the entire population.  
+
+
+
+
+
+
+
+
+
 
 
