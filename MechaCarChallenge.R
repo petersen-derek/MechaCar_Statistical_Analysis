@@ -23,3 +23,18 @@ suspension_coil <- read.csv('Suspension_Coil.csv',check.names = F,stringsAsFacto
 total_summary <- suspension_coil %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups='keep')
 
 lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups='keep')
+
+
+
+###############
+# DELIVERABLE 3
+###############
+
+t.test(suspension_coil$PSI,mu=1500) #compare sample versus population means
+
+t.test(subset(suspension_coil$PSI, suspension_coil$Manufacturing_Lot=="Lot1"),mu=1500)
+
+t.test(subset(suspension_coil$PSI, suspension_coil$Manufacturing_Lot=="Lot2"),mu=1500)
+
+t.test(subset(suspension_coil$PSI, suspension_coil$Manufacturing_Lot=="Lot3"),mu=1500)
+
